@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');:root{
+    --color-bg: #171923;
+    --color-text: white;
+    --color-icon:white;
+    --color-desc:white;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-bg);
+}
+
+h1 {
+    color: var(--color-text);
+}
+
+p{
+    color:var(--color-text) ;
+}
+
+h3{
+    color:var(--color-text) ;
+}
+
+button img{
+    width: 30px;
+}
+button{
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dark{
+    background-image: url("./img/media-luna.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+}
+
+.light{
+    background-image: url("./img/sol.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+}
+
+.skills-icons img{
+    width: 50px;
+    height: 50px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    box-shadow: 1px 2px 5px 0 #000;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    transition: 1s;
+}
+
+.title-box{
+    font-size: 20px;
+}
+
+.proyectos{
+    /* border: 1px solid tomato; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-cust{
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.profile{
+    font-size: 3rem;
+    transition: 1s;
+}
+
+.profile h1{
+    font-size: 2.8rem;
+    transition: 1s;
+}
+
+.text-dif{
+    color: rgb(8, 88, 236);
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+.profile p{
+    font-size: 2.4rem;
+    transition: 1s;
+}
+
+.profile-social i{
+    font-size: 3rem;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: 1s;
+    color: var(--color-icon);
+}
+
+.color-desc{
+    color: var(--color-desc);
+}
+
+.btn-c{
+    /* color: white; */
+    color:var(--color-icon) ;
+}
+
+.btn-c:hover{
+    color: white;
+    /* color:var(--color-icon) ; */
+}
+
+.proyectos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    body.dark-theme {
+        --color-bg: #171923;
+        --color-text: white;
+        --color-desc:white;
+    }
+
+    body.light-theme {
+        --color-icon:black;
+        --color-bg: white;
+        --color-text:#171923;
+        --color-desc:black;
+    }
+ 
+
+}
+
+@media (max-width: 800px) {
+    .profile{
+        text-align: center;
+    }
+    .skills{
+        text-align: center;
+    }
+}
