@@ -173,6 +173,10 @@ a{
 }
 
 @media (max-width: 800px) {
+    body{
+        text-align: center;
+    }
+    
     .profile{
         text-align: center;
     }
