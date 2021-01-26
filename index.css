@@ -154,6 +154,9 @@ a{
     min-height: 100px;
 }
 
+#boton{
+    outline: none;
+}
 .cv button a{
     color: white;
 }
