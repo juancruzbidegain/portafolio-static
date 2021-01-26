@@ -154,12 +154,19 @@ a{
     min-height: 100px;
 }
 
+.cv button a{
+    color: white;
+}
+
+
+
 @media (prefers-color-scheme: dark) {
 
     body.dark-theme {
         --color-bg: #171923;
         --color-text: white;
         --color-desc:white;
+        
     }
 
     body.light-theme {
